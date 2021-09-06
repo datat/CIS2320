@@ -1,17 +1,10 @@
 /* Styles for chapter 3 */
 body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana, Arial, sans-serif;
 	background-color: #F5F5F5;
 	color: #40407A;
 }
-#wrapper {
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-}
-.studio {
-	font-style: italic;
-}
+
 header h1 {
 	background-color: #80CBC4;
 	text-align: center;
@@ -26,10 +19,18 @@ nav {
 nav a {
 	text-decoration: none;
 }
+.studio {
+	font-style: italic;
+}
 footer {
 	background-color: #80CBC4;
 	font-size: .60em;
 	font-style: italic;
 	text-align: center;	
+}
+#wrapper {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
