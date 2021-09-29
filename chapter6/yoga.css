@@ -1,10 +1,24 @@
-/* Styles for chapter 3 */
+/* Styles for chapter 6 */
+* {
+	box-sizing: border-box;
+}
 body {
-	font-family: Verdana, Arial, sans-serif;
+	font-family: Arial, Verdana, sans-serif;
 	background-color: #3F2860;
 	color: #40407A;
 }
-
+h1 {
+	padding-top: 50px;
+	padding-left: 2em;
+}
+#wrapper {
+	background-color: #F5F5F5;
+	min-width: 1200px;
+	max-width: 1480px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
 header {
 	background-color: #80CBC4;
 	background-image: url("lilyheader.jpg");
@@ -12,33 +26,80 @@ header {
 	background-position: right;
 	height: 150px;
 }
-h1 {
-	padding-top: 50px;
-	padding-left: 2em;
-}
 main {
+	margin-left: 170px;
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+nav {
+	float: left;
+	width: 160px;
+	font-weight: bold;
+}
+nav a {
 	display: block;
+	text-align: center;
+	border: 3px outset #CCCCCC;
+	text-decoration: none;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+nav a:link {
+	color: #3F2860;
+}
+nav a:visited {
+	color: #497777;
+}
+nav a:hover {
+	color: #A26100;
+	border: 3px inset #333333
+}
+nav ul {
+	list-style-type: none;
+	padding-top: 1em;
+	padding-left: 1em;
+}
+.floatleft {
+	float: left;
+	margin-right: 4em;
+	margin-bottom: 1em;
+}
+#hero {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.clear {
+	clear: both;
+}
+.onehalf {
+	float: left;
+	width: 50%;
 	padding-left: 2em;
 	padding-right: 2em;
 }
-img {
-	padding-right: 1em;
-	padding-left: 1em;
+.onethird {
+	float:left;
+	width: 33%;
+	padding-left: 2em;
+	padding-right: 2em;
 }
-nav {
-	text-align: center;
-	font-weight: bold;
-	padding: 1em;
-}
-nav a {
+header a {
 	text-decoration: none;
 }
-#hero {
-	text-align: center;
+header a:link {
+	color: #40407A;
+}
+header a:visited {
+	color: #40407A;
+}
+header a:hover {
+	color: #FFFFFF;
 }
 .studio {
 	font-style: italic;
 }
+
 footer {
 	background-color: #80CBC4;
 	font-size: .60em;
@@ -46,12 +107,5 @@ footer {
 	text-align: center;	
 	padding: 1em;
 }
-#wrapper {
-	background-color: #F5F5F5;
-	min-width: 1000px;
-	max-width: 1280px;
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-}
+
 
