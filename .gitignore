@@ -1,3 +1,5 @@
 
 *.zip
 *.docx
+*.webmanifest
+*.code-workspace

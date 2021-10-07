@@ -1,0 +1,112 @@
+html {
+	box-sizing: border-box;
+   }
+*, *:before, *:after {
+	box-sizing: inherit;
+	overflow: auto;
+} 
+body {
+	margin: 0;
+	padding: 0;
+	background-color: wheat;
+	background: linear-gradient(to bottom,  #f0b7a1 0%,#8c3310 63%,#bf6e4e 99%);
+	background: #f0b7a1; 
+	background: linear-gradient(to bottom,  #f0b7a1 0%,#8c3310 63%,#bf6e4e 99%); 
+
+	font-family: Papyrus, Papyrus, Geneva, sans-serif;
+	font-family: Verdana, Tahoma, Arial, Geneva, sans-serif;
+	color:black;
+	font-size: larger;
+	line-height: auto;
+}
+#wrapper {
+	margin: 0 auto;
+	width: 90%;
+	min-width: 640px;
+	max-width: 1200px;
+	min-height: 100vh;  
+}
+#content {
+	position: relative;
+}
+header {
+	min-height: 3em;
+	padding-left: 1em;
+    width: 100%;
+    background-color: #72a56a;
+}
+h2 {
+	font-size: 90%;
+}
+main {
+	width: 60%;
+	padding-left: 1em;
+	margin-left: 20%;
+	margin-right: 20%;
+	min-height: 100vh;
+	background-color: blanchedalmond;
+}
+aside:first-child {
+	width: 20%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: tan;
+	min-height: 100vh;
+	padding-right: 1.2em;
+}
+aside:last-child {
+	width: 20%;
+	padding-left: 1em;
+	padding-right: 1em;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: tan;
+	min-height: 100vh;
+}
+nav ul { 
+	list-style-type: none; 
+}
+nav a { 
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 80%;	
+	border: 3px outset #B3C7E6;
+	border-radius: 10px;
+	margin-bottom: .5em;
+	background-color:powderblue;
+	padding: .5em .5em .5em 0;
+	
+}
+nav a:link { 
+	color: darkblue; 
+}
+nav a:visited { 
+	color: #5b83a3; 
+}
+nav a:hover { 
+	color: #4b5872;
+	background-color: #EAEAEA;
+    background-position: right -100px; 
+}
+footer li { 
+	list-style-type: none;
+	display: inline;
+	color: black;
+}
+footer nav a {
+	display: inline;
+	font-style: normal;
+	font-size: 100%;
+}
+footer {
+	font-size: 70%;
+	font-style: italic;
+	min-height: 1em;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+    background: #72a56a;
+}
