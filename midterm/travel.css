@@ -1,4 +1,4 @@
-html {
+html, body {
 	box-sizing: border-box;
    }
 *, *:before, *:after {
@@ -17,7 +17,6 @@ body {
 	font-family: Verdana, Tahoma, Arial, Geneva, sans-serif;
 	color:black;
 	font-size: larger;
-	line-height: auto;
 }
 #wrapper {
 	margin: 0 auto;
@@ -35,12 +34,26 @@ header {
     width: 100%;
     background-color: #72a56a;
 }
+h1 {
+	padding-left: .5em;
+}
 h2 {
-	font-size: 90%;
+	font-size: 100%;
+}
+img {
+	margin-top: .8em;
+	text-align:center;
+}
+.floatleft {
+	float:left
+}
+.floatright {
+	float: right;
 }
 main {
 	width: 60%;
 	padding-left: 1em;
+	padding-right: 1em;
 	margin-left: 20%;
 	margin-right: 20%;
 	min-height: 100vh;
@@ -64,6 +77,10 @@ aside:last-child {
 	right: 0px;
 	background-color: tan;
 	min-height: 100vh;
+}
+#hero {
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 nav ul { 
 	list-style-type: none; 
@@ -94,17 +111,21 @@ nav a:hover {
 footer li { 
 	list-style-type: none;
 	display: inline;
-	color: black;
 }
 footer nav a {
 	display: inline;
+	text-decoration:underline;
+	font-size: 100%;	
 	font-style: normal;
-	font-size: 100%;
+	font-weight: bold;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
 }
 footer {
 	font-size: 70%;
 	font-style: italic;
-	min-height: 1em;
+	min-height: 2em;
     padding: .5rem;
     width: 100%;
     text-align: center;
