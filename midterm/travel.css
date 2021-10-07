@@ -62,11 +62,8 @@ img {
 	padding-bottom: 1em;
 }
 .floatcenter {
-	float:top;
+	float:inline-start;
 	margin-right: 0;
-}
-.floatbottom {
-	float:inline-end;
 }
 main {
 	width: 60%;
