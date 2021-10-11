@@ -12,7 +12,7 @@ body {
 	background: #f0b7a1; 
 	background: linear-gradient(to bottom,  #f0b7a1 0%,#8c3310 63%,#bf6e4e 99%); 
 
-	font-family: Papyrus, Papyrus, Geneva, sans-serif; /* refer for header fonts */
+	font-family: Papyrus, Tahoma, Geneva, sans-serif; /* refer for header fonts */
 	font-family: Verdana, Tahoma, Arial, Geneva, sans-serif;
 	color:black;
 	font-size: large;
@@ -102,6 +102,18 @@ aside:last-child {
 nav ul { 
 	list-style-type: none; 
 	
+}
+.current-button { 
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 90%;	
+	border: 3px outset #9eb49b;
+	border-radius: 10px;
+	margin-bottom: .5em;
+	background-color:rgb(118, 158, 163);
+	padding: .5em .5em .5em 0;
+
 }
 .button { 
 	display: block;
