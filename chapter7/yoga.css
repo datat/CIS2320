@@ -4,7 +4,7 @@
 }
 body {
 	margin:0;
-	font-family: Arial, Verdana, sans-serif;
+	font-family: Verdana, Arial, sans-serif;
 	background-color: #3F2860;
 	color: #40407A;
 }
@@ -148,7 +148,7 @@ footer {
 	header {
 		font-size:120%;
 	}
-	home {
+	.home {
 		height: 50vh;
 		padding-top: 5em;
 		padding-left: 8em;
