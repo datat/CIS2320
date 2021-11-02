@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name = "viewport" content="width=device-width, initial-scale=1.0" />
+<title>Path of Light Yoga Studio :: Contact</title>
+<link href="yoga.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<nav>
+		<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="classes.html">Classes</a></li>
+		<li><a href="schedule.html">Schedule</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<header 
+		class="content"><a href="index.html"><h1>Path of Light Yoga Studio</h1></a>
+	</header>
+	<div id="wrapper"> 
+		<main>
+		<h2>Contact Path of Light Yoga Studio</h2>
+		<p>
+			Fill out the form below to contact Path of Light 
+			Yoga Studio.  All information is required.
+		</p>
+		<form method="post" name="reg"
+			action="https://webdevbasics.net/scripts/yoga.php">
+			<label for="myName">Name:</label>
+			<input type="text" name="myName" id="myName" required="required" />
+			<label for="myEmail">E-mail:</label>
+			<input type="text" name="myEmail" id="myEmail" required="required" />
+			<label for="myRefer">How did you hear about us?</label>
+			<input type="text" name="myRefer" id="myRefer" required="required"
+				list="sources" />
+				<datalist id="sources">
+					<option value="Google"></option>
+					<option value="Bing"></option>
+					<option value="Facebook"></option>
+					<option value="Friend"></option>
+					<option value="Radio Ad"></option>
+				</datalist>
+			<label for="myComments">Comments:</label>
+			<textarea name="myComments" id="myComments" 
+				required="required" rows="2" cols="20"></textarea>
+			<input type="submit" id="mySubmit" value="Send Now" />
+		</form>
+		</main>
+		<footer>
+			Copyright &#xA9; 2020 Path of Light Yoga Studio<br />
+			<a href="mailto:aricoa@dupage.edu">aricoa@dupage.edu</a>
+		</footer>
+	</div>
+</body>
+
+</html>
