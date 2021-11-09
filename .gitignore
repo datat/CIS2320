@@ -6,3 +6,6 @@
 *.txt
 *.pdf
 *.xlsx
+collab/alan/*.*
+collab/hunter/*.*
+collab/hunter/images/*.*
