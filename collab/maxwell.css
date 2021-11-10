@@ -117,6 +117,9 @@ aside ul {
 aside ul li p {
 	font-size: 75%;
 }
+aside a {
+	display:none;
+}
 main {
 	grid-area: main;
 	padding: 0 0 0 0;	
@@ -268,10 +271,12 @@ header img {
 	}
 	.section.boxes {
 		display: flex;
-		flex-direction: row;
-		font-size: 85%;
+		flex-direction: row;		
 	}
 	.section.boxes div {
 		min-width: 20%;
+	}
+	aside a {
+		display:initial;
 	}
 }
