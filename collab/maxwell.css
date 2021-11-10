@@ -104,7 +104,7 @@ header {
 aside:first-of-type {
 	grid-area: left;
 	padding: 0 1em;
-	background-color: rgb(200, 192, 192);
+	background-color: rgba(200, 192, 192, .5);
 }
 aside ul {
 	list-style-type: none;
@@ -116,7 +116,7 @@ aside ul li p {
 }
 main {
 	grid-area: main;
-	padding: 0 1em 0 0;	
+	padding: 0 0 0 0;	
 	min-height: 100vh;
 	background-color: blanchedalmond;
 	overflow: auto;
@@ -154,12 +154,14 @@ header img {
 
 
 .reviews {
-	background-color: white;	
+	background-color: white;
+	margin: 0 0 0 0;
+	padding: 0 .3em .3em .3em;
 }
 .section-title {
 	max-width: 100%;
-	margin: 0 auto;
-	padding: 20px;
+	margin: 0;
+	padding: .2em 0 0 0;
 	text-align:center;
 }
 .section.boxes {
@@ -171,11 +173,12 @@ header img {
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 30%;
-	margin: 10px;
+	margin: 8px;
 }
 .section.boxes div {
 	display: flex;
 	flex-direction: column;
+	font-size: 85%;
 }
 .signature {
 	font-size: 80%;
@@ -224,10 +227,10 @@ header img {
 	margin: 10px auto;
 	width: 99%;
 }
-.product img {
+.products img {
 	width:125px;
 	height:125px;
-	float: left;
+	/*float: left;*/
 	margin: 0 10px 0 0;
 }
 .product .prodesc {
@@ -244,7 +247,7 @@ header img {
 	nav ul {
 		display: flex;
 		flex-wrap:nowrap;
-		/*justify-content:flex-begin;*/
+		justify-content:flex-begin;
 	}
 	nav li {
 		width: 100%;
