@@ -103,7 +103,7 @@ header {
 }
 aside:first-of-type {
 	grid-area: left;
-	padding: 1em;
+	padding: 0 1em;
 	background-color: rgb(200, 192, 192);
 }
 aside ul {
@@ -116,8 +116,7 @@ aside ul li p {
 }
 main {
 	grid-area: main;
-	padding: 1em;
-	background-color: skyblue;
+	padding: 0 1em 0 0;	
 	min-height: 100vh;
 	background-color: blanchedalmond;
 	overflow: auto;
@@ -144,7 +143,6 @@ header img {
 	object-fit:cover;
 	position: relative;
 	text-align:center;
-	align-items: center;
 	width: 500px;
 	height: 135px;
 	padding: 5px;
@@ -178,7 +176,6 @@ header img {
 .section.boxes div {
 	display: flex;
 	flex-direction: column;
-	align-items: left;
 }
 .signature {
 	font-size: 80%;
@@ -211,11 +208,21 @@ header img {
 	padding: 0;
 }
 
-
+.product img {
+  grid-area: image;
+}
+.product p {
+  grid-area: description;
+}
 .product {
+  	display: grid;
+  	grid-template-columns: auto;
+	grid-template-rows: auto;
+    grid-template-areas: 
+      "image"
+      "description";
 	margin: 10px auto;
 	width: 99%;
-	height: 125px;
 }
 .product img {
 	width:125px;
@@ -237,13 +244,13 @@ header img {
 	nav ul {
 		display: flex;
 		flex-wrap:nowrap;
-		justify-content:flex-begin;
+		/*justify-content:flex-begin;*/
 	}
 	nav li {
 		width: 100%;
 	}
 	#wrapper {
-		grid-template-columns: 28% auto;
+		grid-template-columns: 25% auto;
 		grid-template-rows: auto 1fr;
 		grid-template-areas:
 		"header header"
@@ -251,5 +258,12 @@ header img {
 		"left main"
 		"footer footer";
 		max-width: 100%;
+	}
+	.product {
+		display: flex;
+		grid-template-columns: 1fr auto;
+		grid-template-rows: 1fr auto;
+		grid-template-areas: 
+		"image description";
 	}
 }
