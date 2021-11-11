@@ -229,6 +229,7 @@ header img {
 }
 .product p {
   grid-area: description;
+  padding-left: 10px;
 }
 .product {
   	display: grid;
