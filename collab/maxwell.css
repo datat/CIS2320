@@ -3,6 +3,9 @@ html, body {
 }
 *, *:before, *:after {
 	box-sizing: inherit;
+}
+details {
+	padding-bottom: 1em;
 } 
 body {
 	margin: 0;
@@ -55,7 +58,7 @@ nav a:link {
 	color: #3F2860;
 }
 nav a:visited {
-	color: #497777;
+	color: #5f7272;
 }
 nav a:hover {
 	color: white;
@@ -71,7 +74,7 @@ section {
 	margin-left: 2em;
 }
 section ul {
-	list-style-image: url("images/apple-45x45.gif");
+	list-style-image: url("images/apple-40x40.gif");
 }
 section a {
 	font-family: "Comic Sans MS", cursive;
@@ -109,29 +112,31 @@ aside.ideas {
 	grid-area: leftbottom;
 	padding: 0 1em;
 	background-color: rgba(0, 0, 0, .001);
+	margin-bottom: 1em;
+}
+.project-ideas {
+	display:initial;
+}
+.project-ideas a {
+	font:inherit;
 }
 aside {
 	grid-area: left;
 	padding: 0 1em;
-	background-color: rgba(0, 0, 0, .001);
+	background-color: rgba(236, 235, 235, 0.959);	
 }
-aside ul, div#ideas ul {
+aside ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-aside ul li p, div#ideas ul li p {
+aside ul li p {
 	font-size: 75%;
 }
 aside a{
 	display:initial;
 	font-size: 80%;
 }
-/* summary {
-	font-family: "Comic Sans MS", cursive;
-	font-weight: bold;
-	font-size: 18px;
-}*/
 main {
 	grid-area: main;
 	padding: 0 0 0 0;	
@@ -157,6 +162,13 @@ footer img {
 	margin-left: 0;
 	margin-right: 1em;
 }
+footer table {
+	width:95%;
+	text-align:center;	
+}
+footer table a {
+	color: white;
+}
 header img {
 	object-fit:cover;
 	position: relative;
@@ -169,7 +181,6 @@ header img {
 	bottom: 0;
 	left: 0;
 }
-
 
 .reviews {
 	background-color: white;
@@ -204,17 +215,6 @@ header img {
 }
 
 
-#topdesc {
-	display: flex;
-}
-#topdesc div {
-	margin-bottom: 50px;
-}
-#topdesc h4, #topdesc h5 {
-	font-weight: normal;
-}
-
-
 .products {
 	margin: 0 auto;
 	width: 93%;
@@ -223,7 +223,6 @@ header img {
 	list-style-type: none;
 	padding: 0;
 }
-
 .product img {
   grid-area: image;
 }
@@ -244,8 +243,7 @@ header img {
 .products img {
 	width:125px;
 	height:125px;
-	/*float: left;*/
-	margin: 0 10px 0 0;
+	margin: .5em 10px 0 0;
 }
 .product .prodesc {
   font-style: italic;
@@ -265,6 +263,12 @@ header img {
 	nav li {
 		width: 100%;
 	}
+	aside.ideas {
+		grid-area: left;
+	}
+	.project-ideas {
+		display:none;
+	}
 	#wrapper {
 		grid-template-columns: 25% auto;
 		grid-template-rows: auto 1fr;
@@ -272,7 +276,6 @@ header img {
 			"header header"
 			"nav nav"
 			"left main"
-			"leftbottom main"
 			"footer footer";
 		max-width: 100%;
 	}
