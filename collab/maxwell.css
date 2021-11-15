@@ -172,6 +172,10 @@ footer table a {
 footer table td {
 	width: 33.33%;
 }
+footer table td img {
+	height: 40px;
+	width: 40px;
+}
 header img {
 	object-fit:cover;
 	position: relative;
