@@ -163,11 +163,14 @@ footer img {
 	margin-right: 1em;
 }
 footer table {
-	width:95%;
+	width:100%;
 	text-align:center;	
 }
 footer table a {
 	color: white;
+}
+footer table td {
+	width: 33.33%;
 }
 header img {
 	object-fit:cover;
@@ -280,7 +283,7 @@ header img {
 		max-width: 100%;
 	}
 	.product {
-		grid-template-columns: 1fr auto;
+		grid-template-columns: auto 1fr;
 		grid-template-rows: 1fr auto;
 		grid-template-areas: 
 			"image description";
