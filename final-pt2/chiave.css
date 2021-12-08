@@ -328,11 +328,10 @@ footer table tr td .subscriber {
 }
 .product {
   	display: grid;
-  	grid-template-columns: auto;
+  	grid-template-columns: 1fr auto;
 	grid-template-rows: auto;
     grid-template-areas: 
-      "image"
-      "description";
+      "image description";
 	margin: 10px auto;
 	width: 99%;
 }
@@ -342,10 +341,10 @@ footer table tr td .subscriber {
 	margin: .5em 1.5em 0 0;
 }
 .oils img {
-	width: 75px;
-	height: 100px;
+	width: 70px;
+	height: 90px;
 	box-shadow:none;
-	margin-top: -2em;
+	margin-top: 0;
 	float:right;
 }
 .oils p {
@@ -445,6 +444,9 @@ input[type="checkbox"] {
 		grid-template-rows: 1fr auto;
 		grid-template-areas: 
 			"image description";
+	}
+	.product img {
+		margin-bottom: 0;
 	}
 	.section.boxes {
 		display: flex;
