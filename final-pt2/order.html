@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Chiave (meaning 'key') provides men and their spouses with handcrafted soaps made with high quality ingredients that are 100% natural and pure with essential oils." />
+	<meta property="al:ios:app_name" content="Instagram" />
+	<title>Chiave Essentials :: Order Products</title>
+	<link rel="stylesheet" href="https://use.typekit.net/jjo3mtu.css" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />-->
+	<link href="chiave.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+	<script src="common.js"></script>
+	<style>
+		* {
+		  box-sizing:border-box;
+		}
+		.row {
+		  display:inline;
+		  flex-wrap:nowrap;
+		  margin:0 -16px;
+		}
+		.col-25,
+		.col-50,
+		.col-75 {
+			flex: 75%;
+		  padding:0 16px;
+		  margin-bottom:20px;
+		}
+		.container {
+		  background-color:white;
+		  padding:0 2em 0 2em;
+		  border-radius:10px;
+		}
+		table {
+			background-color:#f2f2f2;
+			width: 100%;
+			padding:10px;
+			border-collapse:collapse;
+			margin-bottom:1em;
+			border-radius:10px;
+		}
+		td {
+			text-align:right;
+			padding-top:5px;
+			padding-right:5px;
+			vertical-align:middle;
+		}
+		input[type=text] {
+			margin-bottom:10px;
+			padding:12px;
+			border: 2px solid #ccc;
+			border-radius:5px;
+		}
+
+		table input[type=text] {
+		  width:100%;
+		  margin-bottom:10px;
+		  padding:12px;
+		  border: 2px solid #ccc;
+		  border-radius:5px;
+		}
+		
+		input[type=number] {
+			grid-area:nbox;
+			padding:5px;
+			width:4.5em;
+			height:2em;
+		}
+
+		
+		.btn {
+		  background-color:#864B53;
+		  color:white;
+		  padding:10px;
+		  margin:10px;
+		  border-style:outset;
+		  border-radius:5px;
+		border-color:lightgray;
+		  width:100%;
+		  cursor:pointer;
+		  font-size:15px;
+		}
+		
+		.btn:hover {
+		  background-color:#AD7D82;
+		}
+		
+		a {
+		  color:#5E8A96;
+		}
+		
+		hr {
+		  border:1px solid lightgrey;
+		}
+
+		
+		span.price {
+		  float:right;
+		  color:grey;
+		}
+		@media (max-width:769px) {
+			.row {
+				flex-wrap:wrap;
+ 			   	flex-direction:column-reverse;
+ 			}
+			.col-25, .col-50, .col-75 {
+				margin-bottom:20px;
+			}
+		}
+		</style>
+</head>
+
+<body>
+	<div id="wrapper">
+	<script>
+		writeheader();
+	</script>
+	<nav>
+		<hr />
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><span class="current-button">Order</span></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="policies.html">Policies</a>
+				<ul>
+				<li><a href="policies.html#return">Return Policy</a></li>
+				<li><a href="policies.html#privacy">Privacy Policy</a></li>
+				<li><a href="policies.html#shipping">Shipping Policy</a></li>
+				</ul>
+			</li>
+		</ul>
+		<hr />
+	</nav>
+	<main>		
+		<form method="post" action="mailto:sales@chiaveessentials.com" enctype="text/plain">
+		<h2 style="text-align:center;">Order</h2>
+		<div class="row">
+			<div class="col-25">
+			<div class="container">
+				<h3>Product Selection</h3>
+					<datalist id="soap-list">
+						<option value="Eucalyptus Lemon"></option>
+						<option value="Woods Exfoliating"></option>
+						<option value="Dreamland"></option>
+						<option value="Orange Ginger Spice"></option>
+						<option value="Fresh Lavender"></option>
+						<option value="Vanilla Bean Clean"></option>
+						<option value="Coffee Bean Excitment"></option>
+						<option value="Variety Pack"></option>
+						<option value="Blue Dreamer"></option>
+					</datalist>
+
+					<label for="soap01"> Soap One:</label>
+					<input type="text" id="soap01" name="soap01" placeholder="-- click to select --"
+					list="soap-list" />
+					<label for="count01"> How Many:</label>
+					<input type="number" id="count01" name="count01" placeholder="0" min="0" max="20" /><br />
+
+					<label for="soap02"> Soap Two:</label>
+					<input type="text" id="soap02" name="soap02" placeholder="-- click to select --"
+					list="soap-list"  />
+					<label for="count02"> How Many:</label>
+					<input type="number" id="count02" name="count02" placeholder="0"  min="0" max="20" /><br />
+
+					<label for="soap03"> Soap One:</label>
+					<input type="text" id="soap03" name="soap03" placeholder="-- click to select --"
+					list="soap-list" />
+					<label for="count03"> How Many:</label>
+					<input type="number" id="count03" name="count03" placeholder="0" min="0" max="20" /><br />
+
+					<label for="soap04"> Soap Two:</label>
+					<input type="text" id="soap04" name="soap04" placeholder="-- click to select --"
+					list="soap-list"  />
+					<label for="count04"> How Many:</label>
+					<input type="number" id="count04" name="count04" placeholder="0" min="0" max="20" /><br />
+
+					<label for="soap05"> Soap One:</label>
+					<input type="text" id="soap05" name="soap05" placeholder="-- click to select --"
+					list="soap-list" />
+					<label for="count05"> How Many:</label>
+					<input type="number" id="count05" name="count05" placeholder="0" min="0" max="20" /><br />
+
+					<label for="soap06"> Soap Two:</label>
+					<input type="text" id="soap06" name="soap06" placeholder="-- click to select --"
+					list="soap-list"  />
+					<label for="count06"> How Many:</label>
+					<input type="number" id="count06" name="count06" placeholder="0" min="0" max="20" /><br />
+
+					<label for="soap07"> Soap One:</label>
+					<input type="text" id="soap07" name="soap07" placeholder="-- click to select --"
+					list="soap-list" />
+					<label for="count07"> How Many:</label>
+					<input type="number" id="count07" name="count07" placeholder="0" min="0" max="20" /><br />
+
+					<label for="soap08"> Soap Two:</label>
+					<input type="text" id="soap08" name="soap08" placeholder="-- click to select --"
+					list="soap-list"  />
+					<label for="count08"> How Many:</label>
+					<input type="number" id="count08" name="count08" placeholder="0" min="0" max="20" /><br />
+					
+					<label for="soap09"> Soap Two:</label>
+					<input type="text" id="soap09" name="soap09" placeholder="-- click to select --"
+					list="soap-list"  />
+					<label for="count09"> How Many:</label>
+					<input type="number" id="count09" name="count09" placeholder="0" min="0" max="20" /><br />
+
+			</div>
+			</div>
+		</div> <!--row-->
+		<div class="row">
+			<div class="col-75">
+			<div class="container">
+				<!--<form action="mailto:sales@chiaveessentials.com">-->
+				<div class="row">
+				<div class="col-50">
+					<h3>Billing Address</h3>
+					<table>
+					<tr>
+						<td><label for="fname"> Full Name:</label></td>
+						<td><input type="text" id="fname" name="firstname" placeholder="John M. Doe" /></td>
+						<td><label for="email"> Email:</label></td>
+						<td><input type="text" id="email" name="email" placeholder="john@example.com" /></td>
+					</tr>
+					<tr>
+						<td><label for="adr"> Address:</label></td>
+						<td><input type="text" id="adr" name="address" placeholder="542 W. 150th Street" /></td>
+						<td><label for="city"> City:</label></td>
+						<td><input type="text" id="city" name="city" placeholder="Chicago" /></td>
+					</tr>
+					<tr>	
+						<td><label for="state"> State:</label></td>
+						<td><input type="text" id="state" name="state" placeholder="IL" /></td>
+						<td><label for="zip"> Zip:</label></td>
+						<td><input type="text" id="zip" name="zip" placeholder="60606" /></td>
+					</tr>
+					</table>
+				</div>
+		
+				<div class="col-50">
+					<h3>Payment</h3>
+					<span>Accepted Cards</span>
+					<div class="icon-container">
+						<i class="fa fa-cc-visa" style="color:navy;"></i>
+						<i class="fa fa-cc-amex" style="color:blue;"></i>
+						<i class="fa fa-cc-mastercard" style="color:red;"></i>
+						<i class="fa fa-cc-discover" style="color:orange;"></i>
+					</div>
+					
+					<table>
+					<tr>
+						<td><label for="cname">Name on Card:</label></td>
+						<td><input type="text" id="cname" name="cardname" placeholder="John More Doe" /></td>
+						<td><label for="ccnum">Credit Card:</label></td>
+						<td><input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" /></td>
+					</tr>
+					<tr>
+						<td><label for="expmonth">Exp Month:</label></td>
+						<td><input type="text" id="expmonth" name="expmonth" placeholder="September" /></td>
+						<td><label for="expyear">Exp Year:</label></td>
+						<td><input type="text" id="expyear" name="expyear" placeholder="2018" /></td>
+					</tr>
+					<tr>
+						<td><label for="cvv">CVV</label></td>
+						<td><input type="text" id="cvv" name="cvv" placeholder="352" /></td>
+					</tr>
+				</table>
+				</div>
+				</div><!--row-->
+				<div style="background-color: white;border:none; text-align:left;">
+				<label>
+					<input type="checkbox" checked="checked" name="sameadr" /> Shipping address same as billing
+				</label><br />
+				<input type="submit" value="Send Form" class="btn" />
+				<!--<input type="submit" value="Continue to checkout" class="btn" />-->
+				<input type="reset" value="Reset Selections" class="btn" />
+				</div>
+			</div><!--container-->
+			</div><!--col-75-->
+		</div>
+		</form>
+	</main>
+	<footer>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><span class="current-button">Order</span></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="policies.html">Policies</a></li>
+		</ul>
+	</nav>
+	<script>writefootertable()</script>
+	</footer>
+</div>
+</body>
+</html>
+
+

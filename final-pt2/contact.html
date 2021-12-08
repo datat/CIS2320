@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Chiave (meaning 'key') provides men and their spouses with handcrafted soaps made with high quality ingredients that are 100% natural and pure with essential oils." />
+	<meta property="al:ios:app_name" content="Instagram" />
+	<title>Chiave Essentials :: Contact Us</title>
+	<link rel="stylesheet" href="https://use.typekit.net/jjo3mtu.css" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />-->
+	<link href="chiave.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+	<script src="common.js"></script>
+	<script>
+		$(document).ready(function() {
+			//$('form').validate();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<script>writeheader();</script>
+		<nav>
+			<hr />
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="order.html">Order</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><span class="current-button">Contact Us</span></li>
+				<li><a href="policies.html">Policies</a>
+					<ul>
+					<li><a href="policies.html#return">Return Policy</a></li>
+					<li><a href="policies.html#privacy">Privacy Policy</a></li>
+					<li><a href="policies.html#shipping">Shipping Policy</a></li>
+					</ul>
+				</li>
+			</ul>
+			<hr />
+		</nav>
+		<main>
+			<div style="margin: 2em; text-align:center">
+				<h1>Contact Us</h1>
+				<span>We would love to hear from you. <br />
+					Email us at 
+					<a href="mailto:contactus@chiaveessentials.com">contactus@chiaveessentials.com</a><br>
+					1243 Linden St., Plymouth, MI 48170<br />
+					(800) 555-2191
+				</span>
+			</div>
+			<!--<div class="contactus">-->
+			<!--action="https://webdevbasics.net/scripts/demo.php" -->
+			<form class="contactus" method="post" action="mailto:contact@chiaveessentials.com" enctype="text/plain"
+				id="ContactForm" accept-charset="UTF-8" class="contact-form">
+				<!--<input type="hidden" name="formtype" value="contact" />-->
+
+					<label for="ContactName">Name: <span>*</span></label>
+					<input required="required" type="text" id="ContactName" name="Name" value="">
+
+					<label for="ContactEmail">Email: <span>*</span></label>
+					<input required="required" type="email" id="ContactEmail" name="Email" 
+						autocorrect="off" autocapitalize="off" value="" aria-required="true">
+
+			
+					<label for="ContactPhone">Phone Number: </label>
+					<input type="tel" id="ContactPhone" name="Phone Number" 
+						pattern="[0-9\-\.\]*" value="" />
+
+					<br />
+					<label for="ContactMessage">Message: <span>*</span></label>
+					<textarea rows="5" cols="40" id="ContactMessage" name="Message" 
+					required placeholder="Enter your comments here"></textarea><br />
+			
+			
+					<input required="required" type="checkbox" name="Consent" />
+					<span>By checking this box and submitting your information, you are granting us 
+					permission to email you. You may unsubscribe at any time.</span><br />
+
+					<div id="buttons">
+					<input type="submit" class="btn" value="Send">
+					<input type="reset" class="btn" value="Reset">
+					</div>
+					<br />
+
+			</form>
+
+		</main>
+
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><span class="current-button">Contact Us</span></li>
+					<li><a href="policies.html">Policies</a></li>
+				</ul>
+			</nav>
+			<script>writefootertable()</script>
+		</footer>
+	</div>
+</body>
+</html>
+	
