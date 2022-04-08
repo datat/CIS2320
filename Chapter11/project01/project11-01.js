@@ -19,7 +19,7 @@ dateBox.onchange = function() {
 	let dateStr = dateBox.value;
 	imageBox.innerHTML = "";
 
-	fetch(`https://api.nasa.gov/planetary/apod?api key=DEMO KEY&date=${dateStr}`)
+	fetch(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${dateStr}`)
 	.then(response => response.json())
 	.then(json => showPicture(json))
 	.catch(error => console.log(error));
