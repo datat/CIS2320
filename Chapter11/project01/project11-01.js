@@ -1,4 +1,3 @@
-"use strict";
 /*    JavaScript 7th Edition
       Chapter 11
       Project 11-01
